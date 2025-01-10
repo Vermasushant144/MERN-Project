@@ -1,0 +1,84 @@
+/* Base Styling */
+body {
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Transactions Statistics Section */
+.transactions-statistics {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 40px auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.statistics-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.statistics-title u {
+  color: #333;
+  text-decoration: underline;
+}
+
+.month-name {
+  color: green;
+  font-style: italic;
+}
+
+/* Statistics Container */
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+/* Individual Statistics Item */
+.statistics-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 27%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statistics-item p {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.statistics-item p:nth-child(2) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Hover Effects */
+.statistics-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
